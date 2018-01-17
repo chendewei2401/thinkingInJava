@@ -21,28 +21,35 @@ package org.chen.practice;
  * 10，通常，表达式中出现的最大数据类型决定了最终结果的数据类型。
  *
  * 按位操作符
+ * 1，与操作符（&）：只有两个输入位都是1时，结果才是1，否则都是0
+ * 2，或操作符（|）：只有两个输入位都是0时，结果才是0，否则都是1
+ * 3，异或操作符（^）：两个输入位，相同则结果为0，不同则结果为1
+ * 4，非操作符（~）：取反操作。它属于一元操作符，只对一个操作数操作
  *
  * 移位操作符
- *
- *
+ * 1，左移位操作符（<<）：操作数向左移动，低位补0
+ * 2，右移位操作符（>>）：正数高位插0，负数高位插1
+ * 3，右移位操作符（>>>）：无论正负，都高位插0
  *
  */
 public class Chapter3 {
 
-    int i;
-
-    char c;
-
-    long l;
-
     public static void main(String[] args) {
+        int i = -1;
+        System.out.println(Integer.toBinaryString(i));
+        i <<= 2;
+        System.out.println(Integer.toBinaryString(i));
+        i >>>= 2;
+        System.out.println(Integer.toBinaryString(i));
 
-        Chapter3 c2 = new Chapter3();
-        int a = 0;
-        System.out.println("c:{}" + c2.c);
-        System.out.println(c2.i);
-        System.out.println(c2.l);
-        System.out.println(a);
+
+        int j = 1;
+        System.out.println(Integer.toBinaryString(j));
+        j <<= 2;
+        System.out.println(Integer.toBinaryString(j));
+        j >>= 2;
+        System.out.println(Integer.toBinaryString(j));
+
     }
 
 }

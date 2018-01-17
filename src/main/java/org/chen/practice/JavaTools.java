@@ -9,6 +9,11 @@ package org.chen.practice;
  * <p>
  * Java 工具集:javac、java
  *
+ * Javac
+ * 1，如果文件并不是以utf保存的，编译时可能出现不识别字符错误，此时可通过javac -encoding utf8 xx.java来处理
+ *
+ *
+ *
  *
  */
 public class JavaTools {

@@ -1,8 +1,3 @@
-/**
- * @author chendewei2401@gmail.com
- * @date 2017年11月12日 上午0:54:00
- * @Desc <p>
- */
 package org.chen.practice;
 
 /**

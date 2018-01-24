@@ -1,4 +1,4 @@
-package org.chen.practice;
+package org.chen.book.thinkinginjava;
 
 /**
  * @author chendewei2401@gmail.com
@@ -6,13 +6,13 @@ package org.chen.practice;
  * @date 2018年1月18日 下午1:34:02
  * @since JDK1.8
  * <p>
- * 多态:
+ * 接口:
  * 1，
  * 5，
  *
  *
  */
-public class Chapter8 {
+public class Chapter9 {
 
     public static void main(String[] args) {
 

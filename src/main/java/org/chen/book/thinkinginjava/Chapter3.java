@@ -1,4 +1,4 @@
-package org.chen.practice;
+package org.chen.book.thinkinginjava;
 
 /**
  * @author chendewei2401@gmail.com

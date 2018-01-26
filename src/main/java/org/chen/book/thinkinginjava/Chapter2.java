@@ -25,6 +25,7 @@ package org.chen.book.thinkinginjava;
  *      long    64bit   0L                  2^63-1（9223372036854775807）
  *      float   32bit   0.0f
  *      double  64bit   0.0d
+ * 10，成员变量是对象时，默认初始化为null
  *
  * 存储
  * 程序运行时，有5个不同的地方可以存储数据，包括：

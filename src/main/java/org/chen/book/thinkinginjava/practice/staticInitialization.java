@@ -1,0 +1,53 @@
+package org.chen.book.thinkinginjava.practice;
+
+/**
+ * 功能点：类初始化时先静态变量，然后是非静态变量。static在类加载时只初始化一次，
+ *       而非static每new一次就会初始化一次。示例参考：
+ */
+class Bowl {
+    Bowl(int marker) {
+        System.out.println("Bowl:" + marker);
+    }
+    void f1(int marker) {
+        System.out.println("f1:" + marker);
+    }
+}
+
+class Table {
+    static Bowl bowl1 = new Bowl(1);
+    Table() {
+        System.out.println("Table");
+        bowl2.f1(1);
+    }
+    void f2(int marker) {
+        System.out.println("f2:" + marker);
+    }
+    static Bowl bowl2 = new Bowl(2);
+}
+
+class Cupboard {
+    Bowl bowl3 = new Bowl(3);
+    static Bowl bowl4 =new Bowl(4);
+    Cupboard() {
+        System.out.println("Cupboard()");
+        bowl4.f1(2);
+    }
+    void f3(int marker) {
+        System.out.println("f3:" + marker);
+    }
+    static Bowl bowl5 = new Bowl(5);
+}
+
+public class staticInitialization {
+    public static void main(String[] args) {
+        System.out.println("create new Cupboard() in main");
+        new Cupboard();
+        System.out.println("create new Cupboard() in main");
+        // static只初始化一次，而非static每次new都会初始化
+        new Cupboard();
+        table.f2(1);
+        cupboard.f3(1);
+    }
+    static Table table = new Table();
+    static Cupboard cupboard = new Cupboard();
+}

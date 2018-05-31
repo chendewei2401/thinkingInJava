@@ -12,6 +12,8 @@ package org.chen.book.thinkinginjava;
  * Javac
  * 1，如果文件并不是以utf保存的，编译时可能出现不识别字符错误，此时可通过javac -encoding utf8 xx.java来处理
  *
+ * Javap
+ * 1，使用javap来分析程序
  *
  *
  *

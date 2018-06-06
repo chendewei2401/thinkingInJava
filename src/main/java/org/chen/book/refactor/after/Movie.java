@@ -1,5 +1,8 @@
 package org.chen.book.refactor.after;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Movie {
 
     public static final int CHILDRENS = 2;
@@ -27,7 +30,8 @@ public class Movie {
     }
 
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
-        Movie movie = Movie.class.newInstance();
-        System.out.println(movie);
+
+        char[] chars = {};
+        System.out.println(Arrays.toString(chars));
     }
 }

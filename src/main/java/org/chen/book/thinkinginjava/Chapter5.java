@@ -57,7 +57,7 @@ package org.chen.book.thinkinginjava;
  * 对象的创建过程：
  * 假设有个名为Dog的类
  * 1，当首次创建Dog对象，或者访问Dog类的静态方法/静态变量时，JVM查找类路径，以定位Dog.class文件
- * 2，然后JVM载入Dog.class，创建Dog的Class对象，此时执行静态初始化
+ * 2，然后JVM载入Dog.class，创建Dog的Class对象，此时执行静态初始化（通过.class获得class引用时不会触发该class的初始化、Class.forName会立刻初始化）
  * 3，当用new创建对象时，首先在堆上为Dog对象分配足够的存储空间
  * 4，这块存储空间会被清零，然后将Dog的成员变量默认初始化
  * 5，执行代码里定义的变量初始化语句

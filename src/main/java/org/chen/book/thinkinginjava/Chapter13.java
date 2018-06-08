@@ -10,7 +10,7 @@ package org.chen.book.thinkinginjava;
  * 1，String对象是不可变的。String类里的方法，都是创建一个新的String对象，以包含一个全新的String对象
  * 2，每当String对象作为方法参数传递时，是传递的引用
  * 3，StringBuilder是Java5引入的非线程安全、但速度更快的字符串操作工具类，之前使用的是线程安全的StringBuffer
- * 4，如果某个对象出现在字符串表达式中，toString方法会被自动调用，以生成表示该对象的String，参考InfiniteRecursion.java
+ * 4，如果某个对象出现在字符串表达式中，toString方法会被自动调用，以生成表示该对象的String，使用null引用会自动被转换为字符串null。参考InfiniteRecursion.java
  * 5，Java的所有格式化功能都由java.util.Formatter类处理，它将格式化字符串与数据翻译成需要的结果：
  *      new Formatter().format("%s The Turtle is at (%d,%d)\n", strName, intX, intY);
  *      或者

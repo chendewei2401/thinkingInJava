@@ -31,7 +31,6 @@ public class Movie {
 
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
 
-        char[] chars = {};
-        System.out.println(Arrays.toString(chars));
+        System.out.println(Test.RED);
     }
 }

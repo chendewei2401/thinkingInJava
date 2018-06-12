@@ -16,7 +16,7 @@ package org.chen.book.thinkinginjava;
  * 5，使用System.arraycopy()复制数组比for循环要快很多
  * 6，String排序算法根据字典顺序，大写字母开头的词放在前面
  * 7，应该优选容器而非数组。只有在性能成为瓶颈，且切换到数组对性能有帮助的情况下，才使用数组重构
- * 8，Math.random()的输出范围为[0,1)
+ * 8，Math.random()的输出范围为[0,1)，Java里一般的闭合都是前包括后不包括，如AbstractList.removeRange(fromIndex,toIndex)就是包含from不包含to
  *
  */
 public class Chapter16 {
